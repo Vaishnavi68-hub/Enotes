@@ -200,7 +200,7 @@ ul li ul.dropdown2 li a{
 
 form {
     border: 3px solid  linear-gradient(to left, rgb(158, 96, 211) , rgb(206, 136, 192));
-    height:400px;
+    height:450px;
     width:400px;
     margin-left:35%;
     margin-top:8%;
@@ -235,7 +235,7 @@ box-shadow:-2px -1px 10px 20px  rgb(190, 120, 255);
     margin-top: 19px;
     margin-left:60px;
   }
-  button {
+  .button1 {
     background-color: #9043a1;
     color: white;
     padding: 14px 20px;
@@ -304,3 +304,92 @@ box-shadow:-2px -1px 10px 20px  rgb(190, 120, 255);
     margin-right:120px;
     margin-top: -35px;
 }
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid white;
+    background: transparent;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid transparent;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #9043a1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size:16px;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+   .signupbtn {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Add padding to container elements */
+  .container1 {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+     .signupbtn {
+      width: 100%;
+    }
+  }
+  h1{
+    margin-left:90px;
+    color:rgb(72, 51, 80);
+    margin-top:4px;
+    font-weight:bolder;
+    font-size:50px;
+  }
+
+  p{
+    margin-left:60px;
+    margin-top:10px;
+  }
+
+
+  .check1{
+    margin-left:60px;
+  }
+
+  .form{
+    margin-top:80px;
+  }
