@@ -3,6 +3,7 @@
     padding: 0;
     
 }
+
 body {
     font-family: 'Arial', sans-serif;
     background-image: linear-gradient(to left, rgb(158, 96, 211) , rgb(206, 136, 192));
@@ -186,4 +187,20 @@ ul li:hover ul.dropdown2 {
 ul li ul.dropdown2 li a{
     font-size: 14px;
 }
+
+.loginpg {
+    border:2px solid black;
+    height:500px;
+    width:300px;
+    margin-bottom:300px;
+
+}
+
+.main{
+    border : 2px solid;
+    height : 300px;
+    width : 400px;
+}
+
+
 
