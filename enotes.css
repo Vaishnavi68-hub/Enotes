@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: linear-gradient(to left, rgb(158, 96, 211) , rgb(206, 136, 192));
+    background-color:#fffef3;
 }
 .navbar {
     display: flex;
@@ -14,14 +14,25 @@ body {
     align-items: center;
     justify-content: space-between;
     top: 0px;
-    color:white;
-     padding: 10px 20px; 
+    color:#C9C5B1;
+     padding: 10px 20px;
+     padding-top: 2px;
+     
+     background-color:#732933; 
+     box-shadow: -2px -1px 10px 20px #4A1B21; 
 }
+
+     
 
 .nav-list {
     display: flex;
     list-style: none;
+     
+    margin-top:1%;
+    padding:10px 10px ;
+    padding-right:30px;
 }
+    
 .nav-list li {
     margin-right: 20px;
     margin: 10px 30px;
@@ -34,7 +45,8 @@ body {
 
 .nav-list li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
@@ -53,7 +65,7 @@ body {
 
 .btn {
     background-color: rgb(255, 255, 255);
-    color:  rgb(158, 96, 211);
+    color: #4F4D46;
     height:42px;
     width:90px;
     border: none;
@@ -74,16 +86,18 @@ body {
 }
  
 .content{
-    margin-top:0.8%;
+    margin-top:19%;
     margin-left:63%;
-    color : #fff;
+    color :#732933;
     overflow-x: hidden;
 }
+
 
 .content h1{
     font-size: 120px;
     line-height:140px;
     font-weight:600;
+    
 }
 .content h2{
     margin-left: 9%;
@@ -106,15 +120,16 @@ body {
 
 
 .gif1{
-    height:180px;
+    height:50px;
     width:180px;
     margin-left:989px;
     margin-top:9%;
 }
 .logo{
     font-size: 34px;
+    color:#ffffff;
     text-shadow: 0 0 5px #fff,
-                 0 0 70px rgb(167, 61, 193);
+                 0 0 70px rgb(255, 255, 255);
 }
 .dropdown {
   float: left;
@@ -198,25 +213,36 @@ ul li ul.dropdown2 li a{
 
 
 
-form {
-    border: 3px solid  linear-gradient(to left, rgb(158, 96, 211) , rgb(206, 136, 192));
-    height:450px;
-    width:400px;
-    margin-left:35%;
-    margin-top:8%;
-    background-image: linear-gradient(to left, rgb(158, 96, 211) , rgb(206, 136, 192));
-box-shadow:-2px -1px 10px 20px  rgb(190, 120, 255);
+
+   
+
+  
+  .right{
+    
+    height:680px;
+    width:70%;
+    margin-left: 50%;
+    float:right;
+   margin-top: -50.7%;
+    
+
+  }
+  .left{
+    
+    height:680px;
+    width:30%;
+    background-color: #732933;
   }
   .login{
-    color:rgb(72, 51, 80);
+    color:#732933;;
     height:20px;
-    width:200px;
-    border : 2px solid linear-gradient(to left, rgb(158, 96, 211) , rgb(206, 136, 192));
-    margin-left:5%;
-    margin-top:2%;
-    padding-top:5%;
+    width:690px;
+    
+    margin-left:3%;
+    margin-top:3%;
+    padding-top:6%;
     padding-bottom: 9%;
-    padding-left: 30%;
+    padding-left: 20%;
     font-weight:bolder;
     font-size:50px;
     font-style:normal;
@@ -224,19 +250,20 @@ box-shadow:-2px -1px 10px 20px  rgb(190, 120, 255);
   
   input[type=text], input[type=password] {
     width: 100%;
+    color: #000;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #151111;
     box-sizing: border-box;
   }
 
   .check{
     margin-top: 19px;
-    margin-left:60px;
+    margin-left:90px;
   }
   .button1 {
-    background-color: #9043a1;
+    background-color:  #631228;;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -249,21 +276,18 @@ box-shadow:-2px -1px 10px 20px  rgb(190, 120, 255);
   
 
   button:hover {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   
-  .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-  }
+ 
   .txtarea{
-    background-color:transparent;
+  
+    border: 2px solid #2d2c2c;
        
   }
   ::placeholder{
-    color:#2d2c2c;
+    color:#151010;
   }
   
   .imgcontainer {
@@ -279,8 +303,10 @@ box-shadow:-2px -1px 10px 20px  rgb(190, 120, 255);
 
   .container {
     padding: 16px;
-    margin-top: 2%;
-    background-color: transparent;
+    margin-top: 1%;
+   
+    width:400px;
+    margin-left: 240px;
      }
 
 
@@ -301,7 +327,7 @@ box-shadow:-2px -1px 10px 20px  rgb(190, 120, 255);
     }
   }
 .psw{
-    margin-right:120px;
+    margin-right:130px;
     margin-top: -35px;
 }
 
@@ -310,12 +336,13 @@ input[type=text], input[type=password] {
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: 1px solid white;
-    background: transparent;
+    border: 1px solid rgb(118, 83, 83);
+    background: #febacf;
+    opacity:0.5;
   }
   
   input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
+    background-color: #bd9797;
     outline: none;
   }
   
@@ -326,7 +353,7 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
   button {
-    background-color: #9043a1;
+    background-color:  #72979d ;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -334,19 +361,13 @@ input[type=text], input[type=password] {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
-    font-size:16px;
   }
   
   button:hover {
     opacity:1;
   }
   
-  /* Extra styles for the cancel button */
-  .cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-  }
-  
+
   /* Float cancel and signup buttons and add an equal width */
    .signupbtn {
     float: left;
@@ -372,9 +393,9 @@ input[type=text], input[type=password] {
       width: 100%;
     }
   }
-  h1{
+  .h1{
     margin-left:90px;
-    color:rgb(72, 51, 80);
+    color:#732933;
     margin-top:4px;
     font-weight:bolder;
     font-size:50px;
