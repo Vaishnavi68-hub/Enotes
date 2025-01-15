@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color:#fffef3;
+    
+    
 }
 .navbar {
     display: flex;
@@ -17,7 +18,7 @@ body {
     color:#C9C5B1;
      padding: 10px 20px;
      padding-top: 2px;
-     
+     margin-top:-3%;
      background-color:#732933; 
      box-shadow: -2px -1px 10px 20px #4A1B21; 
 }
@@ -89,7 +90,7 @@ body {
     margin-top:19%;
     margin-left:63%;
     color :#732933;
-    overflow-x: hidden;
+    
 }
 
 
@@ -228,9 +229,9 @@ ul li ul.dropdown2 li a{
 
   }
   .left{
-    
+    margin-top:-3%;
     height:680px;
-    width:30%;
+    width:33%;
     background-color: #732933;
   }
   .login{
@@ -238,7 +239,7 @@ ul li ul.dropdown2 li a{
     height:20px;
     width:690px;
     
-    margin-left:3%;
+    margin-left:-8%;
     margin-top:3%;
     padding-top:6%;
     padding-bottom: 9%;
@@ -260,7 +261,7 @@ ul li ul.dropdown2 li a{
 
   .check{
     margin-top: 19px;
-    margin-left:90px;
+    margin-left:40px;
   }
   .button1 {
     background-color:  #631228;;
@@ -328,7 +329,7 @@ ul li ul.dropdown2 li a{
   }
 .psw{
     margin-right:130px;
-    margin-top: -35px;
+    margin-top: -3px;
 }
 
 input[type=text], input[type=password] {
@@ -345,6 +346,12 @@ input[type=text], input[type=password] {
     background-color: #bd9797;
     outline: none;
   }
+
+  .input{
+    
+    width:40%;
+    margin-left:34%;
+  }
   
   hr {
     border: 1px solid transparent;
@@ -353,13 +360,14 @@ input[type=text], input[type=password] {
   
   /* Set a style for all buttons */
   button {
-    background-color:  #72979d ;
+    background-color:  #631228 ;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+    font-size:16px;
     opacity: 0.9;
   }
   
@@ -371,8 +379,9 @@ input[type=text], input[type=password] {
   /* Float cancel and signup buttons and add an equal width */
    .signupbtn {
     float: left;
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
+    margin-left:40px;
   }
   
   /* Add padding to container elements */
@@ -380,7 +389,11 @@ input[type=text], input[type=password] {
     padding: 16px;
   }
   
-  /* Clear floats */
+  .clearfix{
+    width:50%;
+    margin-left:30%
+
+  }
   .clearfix::after {
     content: "";
     clear: both;
@@ -409,8 +422,61 @@ input[type=text], input[type=password] {
 
   .check1{
     margin-left:60px;
+    margin-top:2%;
   }
 
   .form{
     margin-top:80px;
+  }
+
+  .login-with-google-btn {
+    transition: background-color .3s, box-shadow .3s;
+    margin-top: -10%;
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+  }
+    &:hover {
+      box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    }
+    
+    &:active {
+      background-color: #eeeeee;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 
+        0 -1px 0 rgba(0, 0, 0, .04),
+        0 2px 4px rgba(0, 0, 0, .25),
+        0 0 0 3px #c8dafc;
+    }
+    
+    body {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+
+  .logp{
+    border:2px solid black;
+    width:100%;
+    margin-left:0%;
+    height:250px;
+    padding-top:80%;
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    text-shadow: 0 0 5px #E6B5BB, 0 0 10px #E6B5BB;
   }
