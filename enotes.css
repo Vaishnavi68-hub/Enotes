@@ -1,15 +1,12 @@
 * {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
-
-
 body {
     font-family: 'Arial', sans-serif;
-    
-    
 }
+
+/*  MAIN PAGE  */
 .navbar {
     display: flex;
     position: sticky;
@@ -23,31 +20,23 @@ body {
      background-color:#732933; 
      box-shadow: -2px -1px 10px 20px #4A1B21; 
 }
-
-     
-
 .nav-list {
     display: flex;
     list-style: none;
-     
     margin-top:1%;
     padding:10px 10px ;
     padding-right:30px;
 }
-    
 .nav-list li {
     margin-right: 20px;
     margin: 10px 30px;
     justify-content: space-between;
 }
-
 .nav-list li:last-child {
     margin-right: 0;
 }
-
 .nav-list li a {
     text-decoration: none;
-    
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -55,16 +44,10 @@ body {
 }
 .nav-list li a:hover {
     color: #090909;
-    /* Change the color on hover */
 }
-
 .rightNav {
     text-align: right;
-
 }
-
-
-
 .btn {
     background-color: rgb(255, 255, 255);
     color: #4F4D46;
@@ -80,26 +63,19 @@ body {
     font-size:18px;
     font-weight: bold;
 }
-
 .btn:hover {
     background-color: #000;
-    /* Change the background color on hover */
     color: #eaeae6;
 }
- 
 .content{
     margin-top:19%;
     margin-left:63%;
     color :#732933;
-    
 }
-
-
 .content h1{
     font-size: 120px;
     line-height:140px;
     font-weight:600;
-    
 }
 .content h2{
     margin-left: 9%;
@@ -119,14 +95,6 @@ body {
         opacity:1;
     }
 }
-
-
-.gif1{
-    height:50px;
-    width:180px;
-    margin-left:989px;
-    margin-top:9%;
-}
 .logo{
     font-size: 34px;
     color:#ffffff;
@@ -137,8 +105,6 @@ body {
   float: left;
   overflow: hidden;
 }
-
-
 ul li ul.dropdown {
     width:13%;
     margin-top:2%;
@@ -147,9 +113,7 @@ ul li ul.dropdown {
     z-index: 999;
     display:none;
     opacity:0.7;
-    
-}
-
+  }
 ul li ul.dropdown li {
     display:block;
 }
@@ -159,8 +123,6 @@ ul li ul.dropdown li a{
 ul li:hover ul.dropdown {
     display: block;
 }
-
-
 ul li ul.dropdown1 {
     width:13%;
     margin-top:2%;
@@ -169,20 +131,16 @@ ul li ul.dropdown1 {
     z-index: 999;
     display:none;
     opacity:0.7;
-    
 }
-
 ul li ul.dropdown1 li {
     display:block;
 }
-
 ul li:hover ul.dropdown1 {
     display: block;
 }
 ul li ul.dropdown1 li a{
     font-size: 14px;
 }
-
 ul li ul.dropdown2 {
     width:13%;
     margin-top:2%;
@@ -191,13 +149,10 @@ ul li ul.dropdown2 {
     z-index: 999;
     display:none;
     opacity:0.7;
-    
 }
-
 ul li ul.dropdown2 li {
     display:block;
 }
-
 ul li:hover ul.dropdown2 {
     display: block;
 }
@@ -205,41 +160,25 @@ ul li ul.dropdown2 li a{
     font-size: 14px;
 }
 
-.loginpg {
-    border:2px solid black;
-    height:500px;
-    width:300px;
-    margin-bottom:300px;
-
-}
 
 
-
-
-   
-
-  
-  .right{
+/*  LOGIN PAGE  */
+/*  SIGNUP PAGE  */
+.right{
     
     height:620px;
     width:900px;
     margin-left: 100%;
    margin-top:0.1%;
-      
-  
-    
-
-  }
+}
   .left{
     margin-top:-3%;
     margin-bottom:-3%;
     height:680px;
     width:33%;
     background-color: #732933;
-  }
-  
-  
-  .login{
+}
+.login{
     color:#732933;;
     height:2px;
     width:690px;
@@ -252,9 +191,8 @@ ul li ul.dropdown2 li a{
     font-weight:bolder;
     font-size:70px;
     font-style:normal;
-  }
-  
-  input[type=text], input[type=password] {
+}
+input[type=text], input[type=password] {
     width: 100%;
     color: #000;
     padding: 12px 20px;
@@ -262,13 +200,12 @@ ul li ul.dropdown2 li a{
     display: inline-block;
     border: 1px solid #151111;
     box-sizing: border-box;
-  }
-
-  .check{
+}
+.check{
     margin-top: 19px;
     margin-left:40px;
-  }
-  .button1 {
+}
+.button1 {
     background-color:  #631228;;
     color: white;
     padding: 14px 20px;
@@ -279,42 +216,26 @@ ul li ul.dropdown2 li a{
     font-size:16px;
     margin-top:18px;
   }
-  
-
-  button:hover {
+button:hover {
     opacity: 0.6;
-  }
-
-  
- 
-  .txtarea{
-  
-    border: 2px solid #2d2c2c;
-       
-  }
-  ::placeholder{
-    color:#151010;
-  }
-  
-  
-
-  .container {
+}
+.txtarea{
+  border: 2px solid #2d2c2c;
+}
+::placeholder{
+    color:#000000;
+}
+.container {
     padding: 16px;
     margin-top: -1%;
-   
     width:400px;
     margin-left: 240px;
-     }
-
-
-  
-  span.psw {
+}
+span.psw {
     float: right;
     padding-top: 16px;
-  }
-  
-  
-  @media screen and (max-width: 300px) {
+}
+@media screen and (max-width: 300px) {
     span.psw {
       display: block;
       float: none;
@@ -327,35 +248,28 @@ ul li ul.dropdown2 li a{
     margin-right:130px;
     margin-top: -3px;
 }
-
 input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: 1px solid rgb(118, 83, 83);
+    border: 1px solid rgb(197, 139, 139);
     background: #febacf;
     opacity:0.5;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
+}
+input[type=text]:focus, input[type=password]:focus {
     background-color: #bd9797;
     outline: none;
-  }
-
-  .input{
-    
+}
+.input{
     width:40%;
     margin-left:34%;
-  }
-  
-  hr {
+}
+hr {
     border: 1px solid transparent;
     margin-bottom: 25px;
-  }
-  
-  /* Set a style for all buttons */
-  button {
+}
+button {
     background-color:  #631228 ;
     color: white;
     padding: 14px 20px;
@@ -365,65 +279,28 @@ input[type=text], input[type=password] {
     width: 100%;
     font-size:16px;
     opacity: 0.9;
-  }
-  
-  button:hover {
+}
+button:hover {
     opacity:1;
-  }
-  
+    background: #9C3544;
+}
 
-  /* Float cancel and signup buttons and add an equal width */
-   .signupbtn {
-    float: left;
-    width: 80%;
-    margin-top: 20px;
-    margin-left:40px;
-  }
-  
-  /* Add padding to container elements */
-  
-  
-  .clearfix{
-    width:130%;
-    float:left;
-    margin-right: 30px;
-    margin-left: -50px;
-
-  }
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  /* Change styles for cancel button and signup button on extra small screens */
-  @media screen and (max-width: 300px) {
-     .signupbtn {
-      width: 100%;
-    }
-  }
-  .h1{
+.h1{
     margin-left:90px;
     color:#732933;
     margin-top:4px;
     font-weight:bolder;
     font-size:50px;
-  }
-
-  p{
+}
+p{
     margin-left:60px;
     margin-top:10px;
-  }
-
-
-  .check1{
+}
+.check1{
     margin-left:60px;
     margin-top:2%;
-  }
-
-  
-
-  .login-with-google-btn {
+}
+.login-with-google-btn {
     transition: background-color .3s, box-shadow .3s;
     margin-top: -13%;
     padding: 12px 16px 12px 42px;
@@ -440,120 +317,95 @@ input[type=text], input[type=password] {
     background-color: white;
     background-repeat: no-repeat;
     background-position: 12px 11px;
-  }
-    &:hover {
+}
+&:hover {
       box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
-    }
-    
-    &:active {
+}
+&:active {
       background-color: #eeeeee;
-    }
-    
-    &:focus {
+}
+&:focus {
       outline: none;
       box-shadow: 
         0 -1px 0 rgba(0, 0, 0, .04),
         0 2px 4px rgba(0, 0, 0, .25),
         0 0 0 3px #c8dafc;
-    }
-    
-    body {
+}
+body {
     text-align: center;
     padding-top: 2rem;
   }
-
-
-  
-  
-
-  .imglog{
+.imglog{
     height:100px;
     width:100px;
     border:2px solid black;
     margin-top:30%;
-  }
+}
 img{
   height:100%;
   width:100%;
   margin-top:150%;
   margin-left:40%;
 }
-  .robot{
+.robot{
 
     height:200px;
     width:210px;
     margin-top:-210px;
     padding-top: 30px;
     margin-left:60px;
-    
-  }
+}
 .p{
-  margin-right:60px;
- 
-  width:100%;
-    margin-left:-10px;
-
-    height:250px;
+   margin-right:60px;
+   width:100%;
+   margin-left:-10px;
+   height:250px;
     padding-top:70%;
     font-size: 25px;
     font-weight: bold;
     color:white;
     text-shadow: 0 0 5px #E6B5BB, 0 0 10px #E6B5BB;
-  
 }
-
-  .left1{
+.left1{
     border:2px solid #732933;
     height:670px;
     width:457px;
     margin-top:-30px;
     background-color:#732933;
-
   }
-
-  .right1{
+.right1{
     border:2px solid rgb(255, 247, 247);
     height:670px;
     width:900px;
     float:right;
-  
-  }  
-
-  .signup1{
-  
+}  
+.signup1{
     height: 90px;
     width:400px;
     padding-top:11%;
     font-size:400%;
     margin-left:28%;
     color:#732933;;
-  }
-
-
-  .container2{
+}
+.container2{
     width:44%;
     margin-left:29%;
 
-  }
-  
-
-  .panda{
+}
+.panda{
     height:200px;
     width:200px;
     margin-top:20%;
     margin-left:-5%;
-  
     padding-top:19%;
-  }
-
-  .plog{
-   
+}
+.plog{
     font-size: 25px;
     font-weight: bold;
     color:white;
     text-shadow: 0 0 5px #E6B5BB, 0 0 10px #E6B5BB;
     margin-right:20%;
-    margin-top: -13%;
+    margin-top: -12%;
     padding-top:-6%;
 
   }
