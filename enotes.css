@@ -184,7 +184,7 @@ ul li ul.dropdown2 li a{
     width:690px;
     order:2px solid black;
     margin-left:-2%;
-    margin-top:-39%;
+    margin-top:-49%;
     padding-top:6%;
     padding-bottom: 11%;
     padding-left: 14%;
@@ -227,7 +227,7 @@ button:hover {
 }
 .container {
     padding: 16px;
-    margin-top: -1%;
+    margin-top: 1%;
     width:400px;
     margin-left: 240px;
 }
@@ -390,12 +390,13 @@ img{
 .container2{
     width:44%;
     margin-left:29%;
+    margin-top:2%;
 
 }
 .panda{
-    height:200px;
-    width:200px;
-    margin-top:20%;
+    height:300px;
+    width:300px;
+    margin-top:15%;
     margin-left:-5%;
     padding-top:19%;
 }
@@ -405,7 +406,325 @@ img{
     color:white;
     text-shadow: 0 0 5px #E6B5BB, 0 0 10px #E6B5BB;
     margin-right:20%;
-    margin-top: -12%;
+    margin-top: -15%;
     padding-top:-6%;
 
   }
+
+
+
+  /* FOOTER */
+
+  /* Footer Styles */
+.modern-footer {
+    background: #000000;
+    color: #f1f1f1;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    margin-top:80%;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    text-align: center;
+  }
+  
+  .enotes-heading {
+    font-size: 35px;
+    font-weight: bolder;
+    color:#46C0AF;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f1f1f1;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-contact,
+  .footer-links,
+  .footer-social {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footer-contact h3,
+  .footer-links h3,
+  .footer-social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #46C0AF;
+    font-family: 'Georgia', serif;
+  }
+  
+  .footer-contact a,
+  .footer-links a,
+  .footer-social a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 8px 0;
+  }
+  
+  .footer-social a {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px 0;
+    gap: 8px;
+    background: #0077b5;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition:  0.3s ease;
+    font-size: 16px;
+  }
+  
+  .footer-social a:hover {
+    background: #005582;
+  }
+  
+  /* LinkedIn Icon in Contact */
+  .footer-contact a i {
+    margin-right: 10px;
+    color: #0077b5;
+  }
+  
+  /* Reserved Rights Section */
+  .footer-rights,
+  .footer-developers {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+  }
+  
+  .footer-rights a,
+  .footer-developers a {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  
+  .footer-rights a:hover,
+  .footer-developers a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-rights div {
+    margin-bottom: 10px;
+  }
+  
+  .footer-developers span {
+    display: block;
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  /* Bold Text for Developers */
+  .bold-text {
+    font-weight: bold;
+    color: #f1f1f1;
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-contact,
+    .footer-links,
+    .footer-social {
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  /* MAIN PAGE @ */
+
+  /* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #004aad, #0077b5);
+    padding: 15px 30px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #ff9800;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Logo Section */
+  .navbar-logo a {
+    text-decoration: none;
+  }
+  
+  .logo-text {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ff9800;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: logo-bounce 2s ease-in-out infinite;
+  }
+  
+  /* Enotes Animation */
+  @keyframes logo-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Navigation Links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 20px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .navbar-links a:hover {
+    background: #ff9800;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  /* Buttons Section */
+  .navbar-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+  
+  .btn-signup {
+    background: #ff9800;
+    color: white;
+    border: 2px solid #ff9800;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
+  }
+  
+  .btn-signup:hover {
+    background: white;
+    color: #ff9800;
+    box-shadow: 0 6px 15px rgba(255, 152, 0, 0.6);
+    transform: translateY(-2px);
+  }
+  
+  .btn-login {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .btn-login:hover {
+    background: white;
+    color: #004aad;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  /* Hover Effect */
+  .navbar:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, #00356b, #00599e);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap;
+      padding: 15px 20px;
+    }
+  
+    .navbar-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .navbar-links li {
+      margin: 10px 15px;
+    }
+  
+    .navbar-buttons {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+  
