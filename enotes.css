@@ -224,7 +224,7 @@ ul li ul.dropdown2 li a{
     height:620px;
     width:900px;
     margin-left: 100%;
-   margin-top:-140%;
+   margin-top:0.1%;
       
   
     
@@ -232,23 +232,20 @@ ul li ul.dropdown2 li a{
   }
   .left{
     margin-top:-3%;
+    margin-bottom:-3%;
     height:680px;
     width:33%;
     background-color: #732933;
   }
-  .loginform{
-    
-    margin-top:120px;
-    height:400px;
-
-  }
+  
+  
   .login{
     color:#732933;;
     height:2px;
     width:690px;
     order:2px solid black;
     margin-left:-2%;
-    margin-top:2%;
+    margin-top:-39%;
     padding-top:6%;
     padding-bottom: 11%;
     padding-left: 14%;
@@ -466,18 +463,8 @@ input[type=text], input[type=password] {
   }
 
 
-  .logp{
-
-    width:100%;
-    margin-left:-10px;
-
-    height:250px;
-    padding-top:70%;
-    font-size: 25px;
-    font-weight: bold;
-    color:white;
-    text-shadow: 0 0 5px #E6B5BB, 0 0 10px #E6B5BB;
-  }
+  
+  
 
   .imglog{
     height:100px;
@@ -491,7 +478,7 @@ img{
   margin-top:150%;
   margin-left:40%;
 }
-  .ghost{
+  .robot{
 
     height:200px;
     width:210px;
@@ -544,8 +531,29 @@ img{
 
 
   .container2{
-    width:48%;
-    margin-left:26%;
+    width:44%;
+    margin-left:29%;
 
   }
   
+
+  .panda{
+    height:200px;
+    width:200px;
+    margin-top:20%;
+    margin-left:-5%;
+  
+    padding-top:19%;
+  }
+
+  .plog{
+   
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    text-shadow: 0 0 5px #E6B5BB, 0 0 10px #E6B5BB;
+    margin-right:20%;
+    margin-top: -13%;
+    padding-top:-6%;
+
+  }
