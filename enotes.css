@@ -848,8 +848,8 @@ input {
   
  
   font-size: 14px;
-  border: 1px solid rgb(197, 139, 139);
-    background: #febacf;
+  border: 1px solid rgb(230, 222, 222);
+    background: #ffffff;
   opacity:1;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -1013,10 +1013,10 @@ body, html {
 .signup-container {
   width: 80%;
   max-width: 400px;
-  background: #f7f9fb;
+  background: #ffffff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .signup-container h1 {
@@ -1045,7 +1045,8 @@ body, html {
   width: 80%;
   padding: 10px;
   font-size: 14px;
-  border: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(230, 222, 222);
   
 }
 
