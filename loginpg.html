@@ -3,50 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login-page</title>
+    <title>LOGIN PAGE</title>
     <link rel="stylesheet" href="enotes.css"/>
 </head>
-
-<body> 
-  <div class="left">
-  
-    <div class="logp">
-      <div ><img src="panda.png" class="panda"/></div>
-      <div><p class="plog">Welcome back! <br>Your notes, your way, anytime.
-      </p></div>
-      </div>
-
-<div class="right">
-   
- 
-
-    <div ><h1 class="login">Login</h1> </div>
-      
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Note Dashboard & Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
   <div class="container">
-    <label for="uname"><b></b></label>
-    <input type="text" class="txtarea" placeholder=" Email" name="uname" required>
+    <!-- Dashboard -->
+    <div class="sidebar">
+      <div class="dashboard-image">
+        <img src="panda.png" alt="E-Note Dashboard Image">
+      </div>
+      <div class="dashboard-message">
+        <h2>Welcome to E-Note</h2>
+        <p>Your trusted companion for organizing notes. Login to begin your journey!</p>
+      </div>
+    </div>
 
-    <label for="psw"><b></b></label>
-    <input type="password"  class="txtarea"  placeholder="Password" name="psw" required>
-
-    <button class="button1" type="submit">Log in</button>
-    
+    <!-- Login Form -->
+    <div class="login-container">
+      <h1>Login to Your Account</h1>
+      <form>
+        <div class="form-group">
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password"></label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="login-button">Login</button>
+        <!-- Forgot Password Link -->
+<div class="forgot-password">
+    <a href="#">Forgot Password?</a>
   </div>
-
-  <div class="container" >
- 
-    <button type="button" class="login-with-google-btn" >
+  <p class="or">Or</p>
+  
+  <!-- Sign in with Google Button -->
+  <div class="google-login">
+    <button type="button" class="google-button">
+      <span class="google-icon"></span>
       Sign in with Google
     </button>
-   
-    <p class="check">Don't have an account ? <a href="signup">Sign up</a></p>
-    <span class="psw"> <a href="#"> Forget password?</a></span>
-  </form>
-      
-          
+  </div>
   
-          
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="modern-footer">
+    <div class="footer-top">
+      <div class="description">
+        <h2 class="enotes-heading">Enotes</h2>
+        <p>Enotes provides curated and easy-to-understand study notes for students who want to excel academically. Our platform focuses on offering concise and well-organized resources to make studying more efficient and effective, helping you stay ahead in your learning journey. Whether you're preparing for exams or simply trying to grasp complex topics, Enotes is your go-to educational partner.</p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom1">
+      <div class="footer-container">
+        <!-- Contact Section -->
+        <div class="footer-contact">
+          <h3 class="contact-heading">Contact Us</h3>
+          <p> <a href="mailto: shrivishnucommunity@gmail.com"><i class="fab fa-linkedin"></i> shrivishnucommunity@gmail.com</a></p>
+          <p> <a href="mailto:vaishnavihuse1@gmail.com"><i class="fab fa-linkedin"></i>vaishnavihuse1@gmail.com</a></p>
+          <p> <a href="tel:+917020955956"><i class="fab fa-linkedin"></i>+917020955956</a></p>
+          <p> <a href="tel: +919370625012"><i class="fab fa-linkedin"></i> +919370625012</a></p>
         </div>
-    
+  
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+          <h3 class="links-heading">Quick Links</h3>
+          <ul>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/faq">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <!-- LinkedIn Section -->
+        <div class="footer-social">
+          <h3 class="social-heading">Connect with Us</h3>
+          <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" class="social-link linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+  
+      <!-- Reserved Rights Section -->
+      <div class="footer-rights">
+        <div>&copy; 2025 Enotes. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></div>
+      </div>
+  
+      <!-- Developer Info Section -->
+      <div class="footer-developers">
+        <span class="bold-text">Developed by Durgesh & Vaishnavi</span>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
+
 </body>
 </html>

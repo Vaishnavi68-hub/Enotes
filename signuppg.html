@@ -7,35 +7,128 @@
     <link rel="stylesheet" href="enotes.css"/>
 </head>
 <body>
-  <div class="main">
-  <div class="right1">
-    <div ><h1 class="signup1">Signup</h1></div>
-    <div class="container2">
-      <label for="uname"></label>
-      <label for="uname"></label>
-      <input type="text" class="txtarea" placeholder=" Username" name="uname" required>
-
-      <input type="text" class="txtarea" placeholder=" Email" name="uname" required>
-  
-      <label for="psw"></label>
-      <input type="password"  class="txtarea"  placeholder="Password" name="psw" required>
-  
-      <button class="button2" type="submit">Sign up</button>
-      
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGN UP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <div class="dashboard-content">
+        <img src="robot.png" alt="Dashboard Image">
+        <h1>Welcome to E-Note</h1>
+        <p>Create your account and organize your notes effortlessly!</p>
+      </div>
     </div>
-    <div class="last" >
-      <p class="check">Already have an account ? <a href="signup">Log in</a></p></div>
 
+    <!-- Signup -->
+    <div class="signup-page">
+      <div class="signup-container">
+        <h1>Create Your Account</h1>
+        <form>
+          <!-- Name  -->
+          <div class="form-group">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
 
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
 
+          <!-- Password Input -->
+          <div class="form-group">
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+          </div>
 
+          <!-- Confirm Password Input -->
+          <div class="form-group">
+            <label for="confirm-password"></label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+          </div>
+
+          <!-- Sign Up Button -->
+          <button type="submit" class="signup-button">Sign Up</button>
+
+          <!-- OR Divider -->
+          <div class="divider">
+            <span>OR</span>
+          </div>
+
+          <!-- Google Signup -->
+          <button type="button" class="google-button">
+            <span class="google-icon"></span>
+            Sign up with Google
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
-  <div class="left1">
-    <div class="robot"><img src="robot.png" /></div>
-       <p class="p">Hey Newbie!<br>Access your world of notes <br> Sign up now.</p></div>
+
+  <!-- Footer Section -->
+  <footer class="modern-footer">
+    <div class="footer-top">
+      <div class="description">
+        <h2 class="enotes-heading">Enotes</h2>
+        <p>Enotes provides curated and easy-to-understand study notes for students who want to excel academically. Our platform focuses on offering concise and well-organized resources to make studying more efficient and effective, helping you stay ahead in your learning journey. Whether you're preparing for exams or simply trying to grasp complex topics, Enotes is your go-to educational partner.</p>
+      </div>
+    </div>
+  
+    <div class="footer-bottom1">
+      <div class="footer-container">
+        <!-- Contact Section -->
+        <div class="footer-contact">
+          <h3 class="contact-heading">Contact Us</h3>
+          <p> <a href="mailto: shrivishnucommunity@gmail.com"><i class="fab fa-linkedin"></i> shrivishnucommunity@gmail.com</a></p>
+          <p> <a href="mailto:vaishnavihuse1@gmail.com"><i class="fab fa-linkedin"></i>vaishnavihuse1@gmail.com</a></p>
+          <p> <a href="tel:+917020955956"><i class="fab fa-linkedin"></i>+917020955956</a></p>
+          <p> <a href="tel: +919370625012"><i class="fab fa-linkedin"></i> +919370625012</a></p>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+          <h3 class="links-heading">Quick Links</h3>
+          <ul>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/faq">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <!-- LinkedIn Section -->
+        <div class="footer-social">
+          <h3 class="social-heading">Connect with Us</h3>
+          <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" class="social-link linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+      </div>
+  
+      <!-- Reserved Rights Section -->
+      <div class="footer-rights">
+        <div>&copy; 2025 Enotes. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></div>
+      </div>
+  
+      <!-- Developer Info Section -->
+      <div class="footer-developers">
+        <span class="bold-text">Developed by Durgesh & Vaishnavi</span>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
+
     
-   
-    </div>
-    </div>
 </body>
 </html>
