@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note page</title>
-    <link rel="stylesheet" href="enotes.css"/>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First Year Notes</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enotes.css">
 </head>
-<body>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eNote - Notes Page</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <!-- Left Panel -->
-      <div class="left-panel">
-        <h2>📚 Subjects</h2>
-        <div class="subject-list">
-          <a href="#" onclick="showMessage('Math')" class="subject-item">Math</a>
-          <a href="#" onclick="showMessage('Science')" class="subject-item">Science</a>
-          <a href="#" onclick="showMessage('English')" class="subject-item">English</a>
-          <a href="#" onclick="showMessage('History')" class="subject-item">History</a>
-          <a href="#" onclick="showMessage('Geography')" class="subject-item">Geography</a>
-          <a href="#" onclick="showMessage('Physics')" class="subject-item">Physics</a>
-          <a href="#" onclick="showMessage('Chemistry')" class="subject-item">Chemistry</a>
-          <a href="#" onclick="showMessage('Biology')" class="subject-item">Biology</a>
-        </div>
-        <div class="quote">
-          <p>“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.”</p>
-        </div>
-      </div>
+<body class="body">
+ 
   
-      <!-- Right Panel -->
-      <div class="right-panel">
-        <div class="welcome-box">
-          <h1 id="welcome-message">Welcome to eNote!</h1>
-          <p id="subject-message">Your learning companion. Select a subject to get started!</p>
-        </div>
-      </div>
+  
+    
+  <div class="sidebar">
+    <h1>eNote Subjects</h1>
+    <button>Mathematics</button>
+    <button>Physics</button>
+    <button>Chemistry</button>
+    <button>Biology</button>
+    <button>History</button>
+    <button>Geography</button>
+    <button>English</button>
+    <button>Computer Science</button>
+    <div class="phrases">
+        <p>"Knowledge is the key to success."</p>
+        <p>"Color your learning journey with creativity."</p>
+        <div class="quote">"Dream big, work hard, and stay focused."</div>
     </div>
-  
-    <script>
-      function showMessage(subject) {
-        document.getElementById('subject-message').textContent = `You selected ${subject}. Notes will appear here soon.`;
-      }
-    </script>
-  </body>
-  </html>
-  
+</div>
+<div class="main-content">
+    <div class="welcome-box">
+        <h2>Welcome to eNote!</h2>
+        <p>Your notes will be accessible here. Select a subject from the left panel to get started!</p>
+    </div>
+</div>
 
 </body>
 </html>
