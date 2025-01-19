@@ -7,53 +7,63 @@
     <link rel="stylesheet" href="enotes.css"/>
 </head>
     
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eNote Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    
-    <header>
-        <nav class="navbar">
-         
-          <div class="navbar-logo">
-            <a href="/">
-              <h1 class="logo-text">Enotes</h1>
-            </a>
-          </div>
-      
-         
-          <ul class="navbar-links">
-            <li><a href="/">Home</a></li>
-            <li class="dropdown">
-              <a href="/notes" class="dropbtn">Notes</a>
-              <div class="dropdown-content">
-                <a href="/notes/class-notes">Class Notes</a>
-                <a href="/notes/subject-notes">Subject Notes</a>
-                <a href="/notes/other-notes">Other Notes</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="/pyqs" class="dropbtn">PYQs</a>
-              <div class="dropdown-content">
-                <a href="/pyqs/class">Class PYQs</a>
-                <a href="/pyqs/university">University PYQs</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a href="/question-bank" class="dropbtn">Question Bank</a>
-              <div class="dropdown-content">
-                <a href="/question-bank/mcq">MCQs</a>
-                <a href="/question-bank/subjective">Subjective Questions</a>
-              </div>
-            </li>
-            <li><a href="/help">Help</a></li>
-            <li><a href="/about">About</a></li>
-          </ul>
-      
-        
-          <div class="navbar-buttons">
-            <a href="/signup" class="btn btn-signup">Sign Up</a>
-            <a href="/login" class="btn btn-login">Login</a>
-          </div>
-        </nav>
-      </header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">eNote</a>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="#notes" class="dropdown-toggle">Notes</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">1st year</a></li>
+          <li><a href="#">2nd year</a></li>
+          <li><a href="#">3rd year</a></li>
+          <li><a href="#">4th year</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#pyqs" class="dropdown-toggle">PYQs</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">1st year</a></li>
+          <li><a href="#">2nd year</a></li>
+          <li><a href="#">3rd year</a></li>
+          <li><a href="#">4th year</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#question-bank" class="dropdown-toggle">Question Bank</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">1st year</a></li>
+          <li><a href="#">2nd year</a></li>
+          <li><a href="#">3rd year</a></li>
+          <li><a href="#">4th year</a></li>
+        </ul>
+      </li>
+      <li><a href="#help">Help</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#signup" class="btn">Sign Up</a></li>
+      <li><a href="#login" class="btn login">Login</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
+
       
                     
             
