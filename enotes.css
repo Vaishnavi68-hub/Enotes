@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Arial', sans-serif;
-   background-image: linear-gradient(to top , #732933 , white);
+   background-image: linear-gradient(to top , #009688 , white);
 
 }
 
@@ -207,44 +207,46 @@ body {
   }
   
   body {
-    font-family: 'Georgia', serif; /* Old-style serif font for vintage vibes */
-    background-color: #f5f5dc; /* Light beige for a classic look */
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
   }
   
+  /* Navbar Styling */
   .navbar {
+    background-color:#009688; /* Deep purple */
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 3px solid #4f7672;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8b4513; /* SaddleBrown for a vintage look */
-    padding: 15px 20px;
-    color: white;
-    border-bottom: 3px solid #d2b48c; /* Tan border for contrast */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .logo-container {
-    display: flex;
-    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
   }
   
   .logo {
-    font-size: 2rem;
-    font-family: 'Garamond', serif; /* Classic font for an old-style look */
+    font-size: 1.8rem;
     font-weight: bold;
-    background: linear-gradient(90deg, #d2b48c, #ffffff, #8b4513);
-    background-size: 300%;
+    font-family: 'Garamond', serif;
+    color: white;
+  }
+  
+  .logo-text {
+    background: linear-gradient(90deg, #ff6f61, #ffa726, #ffcc80);
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient-move 5s infinite linear;
+    color: transparent;
+    animation: gradient 4s infinite linear;
   }
   
-  .tagline {
-    font-size: 0.8rem;
-    font-style: italic;
-    color: #ffebcd; /* Blanched Almond for a subtle vintage touch */
-  }
-  
-  @keyframes gradient-move {
+  @keyframes gradient {
     0% {
       background-position: 0%;
     }
@@ -253,29 +255,49 @@ body {
     }
   }
   
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Navbar Links */
   .nav-links {
     display: flex;
+    gap: 30px;
     list-style: none;
+    align-items: center;
   }
   
   .nav-links li {
-    margin: 0 10px;
+    list-style-type: none;
   }
   
   .nav-links a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .nav-links a:hover {
-    background-color: #d2b48c; /* Tan for hover effect */
+    background-color: #ffffff;
+    color:#009688;
     transform: scale(1.1);
   }
   
+  /* Auth Buttons */
   .auth-buttons {
     display: flex;
     gap: 10px;
@@ -287,21 +309,20 @@ body {
     padding: 8px 15px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: transform 0.3s, background-color 0.3s ease;
-    font-family: 'Georgia', serif;
   }
   
   .login {
     background-color: white;
-    color: #8b4513;
+    color:#009688;
     border: 2px solid white;
   }
   
   .signup {
-    background-color: #d2b48c;
-    color: white;
-    border: 2px solid #d2b48c;
+    background-color: #ffffff;
+    color:#009688;
+    border: 2px solid #ffffff;
   }
   
   .btn:hover {
@@ -310,54 +331,459 @@ body {
   
   .signup:hover {
     background-color: white;
-    color: #8b4513;
+    color:#009688;
   }
   
   .login:hover {
-    background-color: #d2b48c;
-    color: white;
+    background-color: #ffffff;
+    color:#009688;
   }
   
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .hamburger span {
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    margin: 4px 0;
-  }
-  
+  /* Mobile Responsiveness */
   @media screen and (max-width: 768px) {
     .nav-links {
       display: none;
       flex-direction: column;
-      background-color: #8b4513;
       position: absolute;
       top: 70px;
       right: 0;
+      background-color:#009688;
       width: 100%;
+      text-align: center;
       padding: 10px 0;
+      z-index: 999;
     }
   
     .nav-links.active {
       display: flex;
     }
   
+    .auth-buttons {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
     .hamburger {
       display: flex;
     }
   
-    .nav-links li {
-      margin: 10px 0;
-      text-align: center;
+    .logo {
+      font-size: 1.6rem;
     }
   
-    .auth-buttons {
-      display: none;
+    .nav-links a {
+      font-size: 1.1rem;
+      padding: 12px;
     }
   }
   
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 1.4rem;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    .btn {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+
+  /* General Reset */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Full Container */
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Left Side Dashboard */
+  #dashboard {
+    background-color:#009688;
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+  }
+  
+  /* Robot Image Section */
+  #robot-image img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Dashboard Title and Tagline */
+  #dashboard h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #dashboard p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  /* Right Side Signup Form Container */
+  #signup-form-container {
+    background-color: #f4f4f9;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  /* Signup Form Styling */
+  #signup-form {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #signup-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:#009688;
+  }
+  
+  #signup-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+  }
+  
+  #signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #signup-form input:focus {
+    border-color:#009688;
+    outline: none;
+  }
+  
+  #signup-form button {
+    width: 100%;
+    padding: 12px;
+    background-color:#009688;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #signup-form button:hover {
+    background-color:#732933;
+  }
+  
+  #signup-form p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  #signup-form a {
+    color:#009688;
+    text-decoration: none;
+  }
+  
+  #signup-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsive Design */
+  @media screen and (max-width: 1024px) {
+    #container {
+      flex-direction: row;
+    }
+  
+    #dashboard {
+      width: 35%;
+    }
+  
+    #signup-form-container {
+      width: 65%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #container {
+      flex-direction: column;
+    }
+  
+    #dashboard, #signup-form-container {
+      width: 100%;
+      height: auto;
+    }
+  
+    #signup-form {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    #signup-form h2 {
+      font-size: 1.8rem;
+    }
+  
+    #signup-form input, #signup-form button {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #dashboard h1 {
+      font-size: 1.8rem;
+    }
+  
+    #dashboard p {
+      font-size: 1rem;
+    }
+  
+    #signup-form h2 {
+      font-size: 1.6rem;
+    }
+  
+    #signup-form input, #signup-form button {
+      padding: 10px;
+    }
+  
+    #signup-form button {
+      font-size: 1rem;
+    }
+  
+    #robot-image img {
+      width: 80px; /* Smaller image on mobile */
+    }
+  }
+
+
+
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Full Container */
+  #login-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Left Side Dashboard */
+  #login-dashboard {
+    background-color: #009688; /* Teal color for creativity */
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+  }
+  
+  /* Panda Image Section */
+  #panda-image img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Dashboard Title and Tagline */
+  #login-dashboard h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #login-dashboard p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  /* Right Side Login Form Container */
+  #login-form-container {
+    background-color: #f4f4f9;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  /* Login Form Styling */
+  #login-form {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #login-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #009688; /* Matching color */
+  }
+  
+  #login-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+  }
+  
+  #login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #login-form input:focus {
+    border-color: #009688;
+    outline: none;
+  }
+  
+  #login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #009688;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #login-form button:hover {
+    background-color: #00796b;
+  }
+  
+  #login-form p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  #login-form a {
+    color: #009688;
+    text-decoration: none;
+  }
+  
+  #login-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsive Design */
+  @media screen and (max-width: 1024px) {
+    #login-container {
+      flex-direction: row;
+    }
+  
+    #login-dashboard {
+      width: 35%;
+    }
+  
+    #login-form-container {
+      width: 65%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #login-container {
+      flex-direction: column;
+    }
+  
+    #login-dashboard, #login-form-container {
+      width: 100%;
+      height: auto;
+    }
+  
+    #login-form {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    #login-form h2 {
+      font-size: 1.8rem;
+    }
+  
+    #login-form input, #login-form button {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #login-dashboard h1 {
+      font-size: 1.8rem;
+    }
+  
+    #login-dashboard p {
+      font-size: 1rem;
+    }
+  
+    #login-form h2 {
+      font-size: 1.6rem;
+    }
+  
+    #login-form input, #login-form button {
+      padding: 10px;
+    }
+  
+    #login-form button {
+      font-size: 1rem;
+    }
+  
+    #panda-image img {
+      width: 80px; /* Smaller panda image for mobile */
+    }
+  }
+  
+  
+
+
+
