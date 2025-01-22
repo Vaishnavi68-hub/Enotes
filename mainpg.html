@@ -5,16 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enotes</title>
     <link rel="stylesheet" href="enotes.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
     
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eNote Navbar</title>
-  <link rel="stylesheet" href="navbar.css">
-</head>
+
 <body>
   <nav class="navbar">
     <div class="container">
@@ -40,15 +34,55 @@
     </div>
   </nav>
 
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
+
+
+    <div id="main-container">
+       
+        <div id="left-side">
+        
+            <div class="box-row">
+                <a href="#" class="shape">
+                    <i class="fas fa-book"></i>
+                    <h3>Notes</h3>
+                    <p>Access your class notes</p>
+                </a>
+                <a href="#" class="shape">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>PYQs</h3>
+                    <p>Previous Year Questions</p>
+                </a>
+            </div>
+
+           
+            <div class="box-row">
+                <a href="#" class="shape">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Question Bank</h3>
+                    <p>Explore various question banks</p>
+                </a>
+                <a href="#" class="shape">
+                    <i class="fas fa-headset"></i>
+                    <h3>Help</h3>
+                    <p>Need any help?</p>
+                </a>
+            </div>
+
+          
+            <div id="description">
+                <p>Welcome to eNote, your go-to platform for learning materials. Access notes, previous year questions, and more.</p>
+            </div>
+        </div>
+
+        
+        <div id="right-side">
+            <img id="animated-image" src="studypg.jpg" alt="Study Image">
+        </div>
+    </div>
+
 </body>
 </html>
+
+  
 
 
 
